@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Texturina:ital,wght@1,800&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Container för allt*/
+
+.container {
+    height: 100vh;
+    width: 90vw;
+    margin: 0 auto;
+}
+
+
+/* Navigation */
+
+.sticky-nav {
+    top: 0;
+    min-height: 15%;
+    min-width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #ffffff;
+}
+
+.nav-element {}
+
+.nav-element:hover .fa-level-down-alt {
+    color: rgba(4, 117, 74, 0);
+    transition: all 0.5s ease-in-out;
+}
+
+.nav-element:hover .meny {
+    list-style: none;
+    opacity: 1;
+}
+
+.fas {
+    color: rgb(4, 117, 74);
+}
+
+.fas:hover {
+    cursor: pointer;
+    color: rgb(2, 66, 42);
+}
+
+.nav-titel {
+    color: rgb(4, 117, 74);
+    font-weight: bolder;
+    font-size: larger;
+}
+
+.nav-titel:hover {
+    cursor: pointer;
+    color: rgb(2, 66, 42);
+}
+
+.nav-titel a {
+    text-decoration: none;
+    color: rgb(4, 117, 74);
+    font-size: 1.5rem;
+}
+
+.meny {
+    list-style: none;
+    transition: all 0.5s ease-in-out;
+    display: block;
+    opacity: 0;
+    position: absolute;
+    background-color: #00800066;
+}
+
+.meny a {
+    text-decoration: none;
+    color: rgb(4, 117, 74);
+    color: rgb(255 255 255);
+}
+
+.meny-item {
+    font-size: 1.2rem;
+    padding: 8px;
+}
+
+.meny-item:hover {
+    background-color: rgb(4, 117, 74);
+    cursor: pointer;
+}
+
+.phonesize {
+    display: none;
+}
+
+.Ham-icon {
+    height: 30px;
+    display: none;
+}
+
+.hamburger {
+    display: none;
+}
+
+
+/* Hero */
+
+.hero {
+    height: 100%;
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 3rem;
+}
+
+.herobackground {
+    min-width: 100%;
+    border-radius: 1rem;
+}
+
+
+/* Sectgion Nyheter */
+
+.nyheter {
+    border: solid;
+    min-height: 70%;
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+    border-color: rgb(2, 66, 42);
+}
+
+.news {
+    font-size: 3rem;
+    font-family: 'Texturina', serif;
+    text-align: center;
+    color: rgb(2, 63, 40);
+    text-decoration-line: underline;
+}
+
+.nyhet {
+    padding: 0.5rem;
+    line-height: 1.5rem;
+}
+
+.nyhet h3 {
+    padding-bottom: 00.5rem;
+    font-family: 'Texturina', serif;
+    color: rgb(2, 63, 40);
+    text-decoration-line: underline;
+}
+
+.nyhet p {
+    color: rgb(4, 117, 74);
+}
+
+.content {
+    text-decoration: none;
+}
+
+
+/* Section Runda bilder */
+
+.rundafastighetsbildersomlänk {
+    min-width: 100%;
+    min-height: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.rund img {
+    border-radius: 1rem;
+}
+
+
+/* Footer */
+
+.footer {
+    min-height: 30%;
+    min-width: 100%;
+    background-color: rgb(181, 192, 188);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 1rem;
+}
+
+.adress-list {
+    font-family: 'Texturina', serif;
+    list-style: none;
+    padding-bottom: 1rem;
+    font-size: 1.5rem;
+    text-align: center;
+    color: rgb(4, 117, 74);
+}
+
+.footer-left {
+    margin-left: 2rem;
+}
+
+.footer-center {
+    font-size: 2rem;
+    margin-left: 3rem;
+}
+
+.footer-right {
+    margin-right: 2rem;
+}
+
+.footer-right a {
+    font-size: 3.5rem;
+    text-decoration: none;
+}
+
+.fab {
+    color: rgb(4, 117, 74);
+    padding: 1rem;
+}
+
+
+/* Media query */
+
+
+/* Mobile */
+
+@media screen and (max-width: 376px) {
+    .sticky-nav {
+        display: none;
+    }
+    .nav-element {
+        display: none;
+    }
+    .logo {
+        display: none;
+    }
+    .phonesize {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .phonesize-logo {
+        height: 5rem;
+        width: 5rem;
+    }
+    .Ham-icon {
+        height: 2rem;
+        display: block;
+    }
+}
+
+
+/* Padda */
+
+@media screen and (max-width: 768px) {}
